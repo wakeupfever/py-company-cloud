@@ -1,0 +1,26 @@
+[project]
+name = "py-company-cloud"
+version = "0.1.0"
+description = "通过企业安全生产业务学习 Python 后端开发"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "fastapi>=0.115,<1.0",
+    "uvicorn>=0.30,<1.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9,<1.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+indent-width = 2
+
+[tool.ruff.format]
+quote-style = "single"
